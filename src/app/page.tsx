@@ -5,8 +5,7 @@ import { BsHouseFill } from "react-icons/bs";
 export default function Home() {
   return (
     <>
-
-      <section className="bg-gradient-to-tr from-white via-white to-indigo-400 min-h-screen">
+      <section className="bg-gradient-to-tr from-white via-white to-indigo-400 min-h-screen 2xl:min-h-fit">
         <header>
           <nav className="flex items-center justify-between h-16 max-w-screen-lg m-auto">
             <h2 className="text-2xl font-bold text-indigo-600 flex items-center gap-1"><BsHouseFill />Sekosan</h2>
@@ -30,6 +29,27 @@ export default function Home() {
           </div>
           <div className="flex-grow">
             <Image src={"/assets/house-searching.svg"} alt="house-searcing" width={500} height={500} />
+          </div>
+        </div>
+      </section>
+      <section className="min-h-screen 2xl:min-h-fit">
+        <div className="flex max-w-screen-lg gap-8 m-auto mt-4 2xl:mt-60">
+          <div className="flex gap-2">
+            <div className="w-60 h-96 bg-indigo-600 rounded-s-md rounded-br-md"></div>
+            <div className="flex flex-col gap-2">
+              <div className="w-60 h-40 bg-indigo-600 rounded-tr-md"></div>
+              <div className="w-60 h-40 bg-indigo-600 rounded-br-md"></div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold">Lorem Ipsum Dolor Sit Amet</h2>
+            <p className="text-zinc-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <div>
+
+              </div>
+            </div>
           </div>
         </div>
       </section>
