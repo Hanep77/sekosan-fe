@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return <section className="flex items-center min-h-screen 2xl:min-h-fit 2xl:mt-20">
     <div className="max-w-screen-lg m-auto 2xl:py-12 px-4 md:px-0">
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-8">
         <div className="flex gap-2 pe-3">
           <div className="md:w-60 md:h-96 w-1/2 bg-indigo-600 rounded-s-md rounded-br-md z-20">
             <Image src={"/assets/house-1.jpg"} alt="house" width={500} height={500}
@@ -31,13 +31,13 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 mt-16">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-8 mt-16">
         <div className="order-2">
           <h2 className="text-3xl font-bold">Bagaimana Cara Kerjanya?</h2>
           <ol className="text-zinc-500 text-lg mt-3 list-decimal ps-5">
-            <li><span className="text-indigo-600 font-semibold">Cari Kosan</span> - Gunakan pencarian atau filter untuk menemukan kosan terbaik.</li>
-            <li><span className="text-indigo-600 font-semibold">Lihat Detail</span> - Cek harga, fasilitas, dan ulasan penghuni sebelumnya.</li>
-            <li><span className="text-indigo-600 font-semibold">Booking Mudah</span> - Hubungi pemilik atau lakukan pemesanan secara online.</li>
+            <li><h5 className="text-indigo-600 font-semibold">Cari Kosan</h5><p>Gunakan pencarian atau filter untuk menemukan kosan terbaik.</p></li>
+            <li><h5 className="text-indigo-600 font-semibold">Lihat Detail</h5><p>Cek harga, fasilitas, dan ulasan penghuni sebelumnya.</p></li>
+            <li><h5 className="text-indigo-600 font-semibold">Booking Mudah</h5><p>Hubungi pemilik atau lakukan pemesanan secara online.</p></li>
           </ol>
         </div>
         <div className="flex-grow md:order-2">

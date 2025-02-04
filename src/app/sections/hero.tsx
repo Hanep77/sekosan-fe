@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
       </nav>
     </header>
-    <div className="flex flex-col md:flex-row items-center max-w-screen-lg gap-4 m-auto mt-8 md:mt-28 px-4 md:px-0">
+    <div className="flex flex-col md:flex-row items-center justify-center max-w-screen-lg gap-8 md:gap-4 m-auto md:mt-28 px-4 md:px-0 min-h-screen md:min-h-fit">
       <div className="md:w-1/2 order-2">
         <h1 className="text-4xl md:text-5xl font-extrabold text-zinc-800">Cari <span className="text-indigo-600">Kosan Idaman</span>, Dapatkan Dengan <span className="text-indigo-600">Gampang</span></h1>
         <p className="text-justify mt-2 text-zinc-500">Jelajahi berbagai pilihan kosan dengan fitur pencarian mudah, cepat, dan sesuai kebutuhanmu. Dari lokasi strategis hingga fasilitas terbaik, temukan kosan idaman tanpa repot. Semua ada di satu tempat, cukup beberapa klik saja!</p>
