@@ -54,7 +54,7 @@ export default function Testimony() {
     if (!isDragging || !scrollContainerRef.current) return;
     e.preventDefault();
     const x = e.pageX - scrollContainerRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // Faktor kecepatan drag
+    const walk = (x - startX) * 1;
     scrollContainerRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -77,8 +77,8 @@ export default function Testimony() {
         >
           <div className="flex min-w-max gap-5 p-4">
             {testimonies.map(testimony => (
-              <div key={testimony.name} className="flex snap-center flex-col items-center text-center w-80 border border-zinc-300 p-5 rounded shadow-lg skew-x-3 skew-y-3 hover:skew-x-0 hover:skew-y-0 transition">
-                <div className="border border-zinc-300 rounded-full text-5xl text-zinc-500 overflow-hidden p-2">
+              <div key={testimony.name} className="flex snap-center flex-col items-center text-center w-80 border border-indigo-600 p-5 rounded shadow-lg skew-x-3 skew-y-3 hover:skew-x-0 hover:skew-y-0 transition">
+                <div className="border border-zinc-300 bg-zinc-200 rounded-full text-5xl text-zinc-500 overflow-hidden p-2">
                   <FaUser />
                 </div>
                 <div className="mt-5">
