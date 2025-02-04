@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 export default function Footer() {
   return <footer className="bg-indigo-950 text-zinc-400">
     <div className="mx-auto w-full max-w-screen-md px-4 md:px-0 py-6 lg:py-8">
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="mb-6 flex flex-col justify-between md:mb-0">
           <h1 className="text-2xl font-bold text-white mb-2">Sekosan</h1>
           <div>

@@ -27,7 +27,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="max-w-screen-md mx-auto py-20">
+    <section className="max-w-screen-md mx-auto pb-8 md:py-20 px-4 md:px-0">
       <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">FAQ - Pertanyaan yang Sering Diajukan</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (

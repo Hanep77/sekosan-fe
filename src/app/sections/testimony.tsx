@@ -61,7 +61,7 @@ export default function Testimony() {
   const handleMouseUp = () => setIsDragging(false);
 
   return <section className="flex items-center min-h-screen 2xl:min-h-fit 2xl:mt-20">
-    <div className="max-w-screen-lg m-auto 2xl:py-12">
+    <div className="w-screen md:max-w-screen-lg m-auto 2xl:py-12 px-4 md:px-0">
       <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-16">Testimony Pengguna</h2>
       <div className="relative">
         <div className="absolute z-10 left-0 top-0 h-full w-32 bg-gradient-to-r from-white via-white/50 to-transparent pointer-events-none" />
@@ -69,7 +69,7 @@ export default function Testimony() {
         <div className="absolute z-10 right-0 top-0 h-full w-32 bg-gradient-to-l from-white via-white/50 to-transparent pointer-events-none" />
         <div
           ref={scrollContainerRef}
-          className="w-full overflow-x-auto scrollbar-none cursor-grab active:cursor-grabbing select-none"
+          className="md:w-auto overflow-x-auto scrollbar-none cursor-grab active:cursor-grabbing select-none"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -77,7 +77,7 @@ export default function Testimony() {
         >
           <div className="flex min-w-max gap-5 p-4">
             {testimonies.map(testimony => (
-              <div key={testimony.name} className="flex snap-center flex-col items-center text-center w-80 border border-indigo-600 p-5 rounded shadow-lg skew-x-3 skew-y-3 hover:skew-x-0 hover:skew-y-0 transition">
+              <div key={testimony.name} className="flex snap-center flex-col items-center text-center w-60 md:w-80 border border-indigo-600 p-5 rounded shadow-lg skew-x-3 skew-y-3 hover:skew-x-0 hover:skew-y-0 transition">
                 <div className="border border-zinc-300 bg-zinc-200 rounded-full text-5xl text-zinc-500 overflow-hidden p-2">
                   <FaUser />
                 </div>

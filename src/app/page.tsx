@@ -6,12 +6,12 @@ import Testimony from "./sections/testimony";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <About />
       <Testimony />
       <FAQSection />
       <Footer />
-    </>
+    </div>
   );
 }
