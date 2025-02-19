@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
 import { BsHouseFill } from "react-icons/bs";
 
@@ -8,8 +9,8 @@ export default function Hero() {
       <nav className="flex items-center justify-between h-16 max-w-screen-lg m-auto px-4 md:px-0">
         <h2 className="text-2xl font-bold text-indigo-600 flex items-center gap-1"><BsHouseFill />Sekosan</h2>
         <div className="flex gap-2">
-          <button type="button" className="h-8 border-2 border-indigo-600 px-4 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white">Sign up</button>
-          <button type="button" className="h-8 bg-indigo-600 text-white px-4 rounded-full">Sign in</button>
+          <Link href={"/signup"} className="h-8 flex items-center border-2 border-indigo-600 px-4 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white">Sign up</Link>
+          <Link href={"/signin"} className="h-8 flex items-center bg-indigo-600 text-white px-4 rounded-full">Sign in</Link>
         </div>
       </nav>
     </header>
